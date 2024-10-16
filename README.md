@@ -79,9 +79,9 @@ Este enfoque asegura que la aplicación sea visualmente atractiva y funcional en
 ### Búsqueda por nombre
 ![Busqueda](./src/fotosFront/BusquedaPorNombre.png)
 ### Filtrado por Mayor Precio
-![FiltroMayorPrecio](./src/fotosFront/mayorPrecio.png)
+![FiltroMayorPrecio](./src/fotosFront/MayorPrecio.png)
 ### Filtrado por Menor Precio
-![FiltroMayorPrecio](./src/fotosFront/menorPrecio.png)
+![FiltroMayorPrecio](./src/fotosFront/MenorPrecio.png)
 ### Pantalla Principal de 768px máximo
 ![768px](./src/fotosFront/MaxWidth768.png)
 ### Pantalla Principal de 600px máximo
