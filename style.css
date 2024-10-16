@@ -1,0 +1,365 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+/* HEADER */
+.containerPrincipal {
+  width: 100%;
+  height: 8vh;
+  background-color: rgb(105, 161, 143);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+
+.containerContenido{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem;
+}
+
+.headerSearch{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1vh;
+}
+.inputHeader {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem;
+  outline: none;
+  font-size: 1.6vh;
+  width: 20vw;
+}
+
+.botonBuscar {
+  border: 1px solid black;
+  color:  black;
+  background-color: bisque;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.6vh;
+  cursor: pointer;
+  width: 8vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.botonBuscar:hover {
+  background-color: rgb(206, 187, 153);
+  transition-duration: 0.5s;
+}
+.botonAgregar{
+  border: 1px solid black;
+  color:  black;
+  background-color: bisque;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.6vh;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.botonAgregar:hover {
+  background-color: rgb(206, 187, 153);
+  transition-duration: 0.5s;
+  }
+
+/* MAIN */
+.containerView {
+  display: grid;
+  grid-template-columns: 0.2fr 0.8fr;
+}
+
+.listAside{
+  background-color: rgb(255, 255, 255);
+  height: 92vh;
+  
+}
+/* Listado de Productos */
+.store{
+  background-color:  rgb(255, 238, 218);
+  max-height: 92vh;
+  overflow-y: auto;
+  
+}
+.sectionStore{
+  background-color: white;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  
+}
+
+.sectionStore h3{
+  font-size: 2.5vh;
+  padding: 1rem;
+  text-decoration: underline;
+}
+
+.containerProductStore{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 0.6fr);
+  gap: 2vh;
+  padding-left: 1rem;
+}
+
+.contenedorCards{
+  width: 20vw;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.4rem;
+  box-shadow: 2px 2px 5px 4px  rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.contenedorCards:hover{
+  transform: scale(1.02);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.contenedorCards div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  
+}
+
+.sectionStore img {
+  width: 100%;
+  border-radius: 0.4rem;
+}
+/* Dando estilo al List Aside */
+.listAside{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.listAside h2{
+  margin-top: 2vh;
+  display: flex;
+  font-size: 2.5vh;
+  justify-content: center;
+  align-items: center;
+}
+.listAside ul{
+  margin-top: 3vh;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 1vh;
+}
+.listAside ul li{
+  font-size: 1.5vh;
+  font-weight: 500;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+}
+.listAside ul li:hover{
+  background-color: rgb(105, 161, 143);
+}
+.liActive{
+  font-weight: bolder;
+  background-color: rgb(105, 161, 143);
+  color: white;
+}
+
+.popUpPrincipal{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(3px);
+}
+.popUpContainer{
+  width: 50vw;
+  height: 50vh;
+  background-color: white;
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.tituloPopUp{
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  text-decoration: underline;
+}
+.inputPopUp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vh;
+ 
+}
+.inputPopUp input {
+  width: 80%;
+  border: 1.5px solid rgb(138, 130, 130);
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+
+}
+.inputPopUp select{
+  width: 80%;
+  border: 1.5px solid rgb(138, 130, 130);
+  outline: none;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.botoneraPopUp{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2vh;
+}
+.btnPop{
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 2vh;
+}
+.btnPop:hover{
+  cursor: pointer;
+}
+.Cancel{
+  background-color: rgb(83, 143, 199);
+  color: white;
+}
+.Cancel:hover{
+  background-color: rgb(16, 117, 212);
+}
+.Accept{
+  background-color: rgb(54, 151, 54);
+  color: white;
+}
+.Accept:hover{
+  background-color: rgb(37, 189, 37)
+}
+.Delete{
+  background-color: rgb(201, 15, 15);
+  color: white;
+}
+.Delete:hover{
+  background-color: rgb(255, 0, 0);
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1025px) {
+
+.containerProductStore{
+  grid-template-columns: repeat(4, 0.4fr);
+  padding-left: 2rem;
+}
+
+.contenedorCards{
+  width: 14vw;
+}
+    
+}
+
+@media screen and (max-width: 768px) {
+   /* Modificando la seccion de los productos  */
+  .containerProductStore{
+    grid-template-columns: repeat(2, 0.6fr);
+    
+  }
+  .contenedorCards{
+    width: 30vw;
+    height: 30vh;
+  }
+
+  /* Modificando la seccion de la barra de navegacion */
+
+  .containerContenido{
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  .headerSearch{
+    justify-content: space-between;
+    gap: 0.5vh;
+  }
+
+  .inputHeader {
+    font-size: 1.3vh;
+    
+  }
+  
+  .botonBuscar {
+    font-size: 0;
+  }
+  .botonBuscar span{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+  
+  .botonBuscar::before{
+    content: '';
+    display: none;
+  }
+
+  .botonAgregar{
+    font-size: 1.3vh;
+  }
+}  
+
+@media screen and (max-width: 600px) {
+
+
+  .containerProductStore{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+  }
+  
+  .contenedorCards{
+    width: 30vw;
+  }
+
+  /* No modifico la barra del header porque mantengo la configuracion anterior */
+}  
+
+/* Añado configuracion de la scrollbar */
+::-webkit-scrollbar {
+  width: 0.7rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.2rem;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(105, 161, 143);
+  border-radius: 0.2rem;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(92, 121, 111);
+  }
